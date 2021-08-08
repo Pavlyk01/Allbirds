@@ -9,7 +9,23 @@ $(function() {
         nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/arrow/arrow-right.png" alt=""></button>',
         autoplay: true,
         pauseOnHover: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 3000,
+        responsive: [{
+                breakpoint: 801,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    autoplaySpeed: 5000
+                }
+            },
+            {
+                breakpoint: 501,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 2
+                }
+            }
+        ]
 
     });
     $('.tabs-wrapper').each(function() {
